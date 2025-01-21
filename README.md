@@ -1,33 +1,52 @@
 # Movie Recommendation System
 
-This project is a simple **Movie Recommendation System** that suggests movies based on the similarity of features such as genres, keywords, tagline, cast, and director. The recommendation system uses **TF-IDF Vectorization** and **Cosine Similarity** for text-based feature comparison.
-
----
+A machine learning-based recommendation system that suggests movies similar to the user's favorite choice. This project utilizes **TF-IDF vectorization** and **cosine similarity** to identify and recommend movies based on genres, keywords, cast, tagline, and directors.
 
 ## Features
+- Recommends top 10 similar movies for a given movie title.
+- Includes a Python-based CLI version and a web app powered by **Streamlit**.
+- Uses a pre-trained model serialized with **Pickle** for efficient recommendations.
 
-- Suggests movies similar to the user's favorite movie.
-- Uses **TF-IDF** to convert textual data into feature vectors.
-- Employs **Cosine Similarity** to find and rank similar movies.
-- Handles missing data by replacing null values with an empty string.
+## Installation
+1. Clone the repository:
+- git clone https://github.com/Nishantr846/movie-recommendation-system.git
+- cd movie-recommendation-system
+2. Install the required Python libraries:
+- pip install pickle-mixin
+- pip install scikit-learn
+- pip install numpy
+- pip install pandas
+- pip install streamlit
+3. Place the movies.csv dataset in the project directory.
+4. . Run the Streamlit app:
+   - streamlit run Movie_Recommendation_WebApp.py
 
----
+5. Open the app in your browser (Streamlit will provide a local URL).
 
-## Prerequisites
+## Dataset
+The project uses a movie dataset in CSV format with the following fields:
 
-Before running the program, ensure you have the following installed:
+- title: The name of the movie.
+- genres: Categories of the movie.
+- keywords: Relevant keywords.
+- tagline: A short tagline of the movie.
+- cast: Cast members.
+- director: The movie's director.
 
-- Python 3.x
-- Pandas
-- NumPy
-- Scikit-learn
+  
+## Technologies Used
+- Python
+- Machine Learning: TF-IDF Vectorizer, Cosine Similarity
+- Streamlit: Web application framework
+- Pickle: Model serialization
 
-Install the required libraries using:
 
-pip install pandas numpy scikit-learn
+# Contributing
+Feel free to fork this project, submit issues, or create pull requests. Contributions are always welcome!
 
-git clone https://github.com/Nishantr846/movie-recommendation-system.git
+## Contact : 
+- Nishant Kumar
+- nishantr846@gmail.com
+- https://www.linkedin.com/in/nishantr846/
 
-cd movie-recommendation-system
 
-python movie_recommendation.py
