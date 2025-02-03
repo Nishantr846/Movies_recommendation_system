@@ -10,7 +10,7 @@ import difflib
 import streamlit as st
 
 # Load the saved model
-model_data = pickle.load(open("C:/Users/Nishant/Desktop/ML/Movie Recommendation System/movie_recommendation_model.sav", 'rb'))
+model_data = pickle.load(open("movie_recommendation_model.sav", 'rb'))
 vectorizer = model_data['vectorizer']
 similarity = model_data['similarity']
 movies_data = model_data['movies_data']
